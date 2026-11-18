@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JobCheck · Fake Job Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/app.js" defer></script>
+</head>
+
+<body>
+    <nav><a class="brand" href="/">JobCheck<span>·</span></a>
+        <div><a href="/bulk">Bulk check</a><a href="/history">History</a><a href="/metrics">Model metrics</a><a
+                href="/about">About</a></div>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="eyebrow">A smarter first check</div>
+            <h1>Is this job offer<br><em>too good to be true?</em></h1>
+            <p>Paste the details. JobCheck looks for common scam signals and gives you a quick risk estimate.</p>
+        </section>
+        <div class="alert" id="error" hidden></div>
+        <form class="card form" id="predict-form">
+            <div class="grid"><label>Job title *<input name="title" maxlength="10000" required
+                        placeholder="e.g. Data Entry Executive"></label><label>Location<input name="location"
+                        maxlength="10000" placeholder="City or remote"></label><label>Employment type<input
+                        name="employment_type" maxlength="10000"
+                        placeholder="Full-time, contract..."></label><label>Company profile<textarea
+                        name="company_profile" maxlength="10000" rows="3"></textarea></label><label class="wide">Job
+                    description *<textarea name="description" maxlength="10000" rows="6"
+                        required></textarea></label><label>Requirements<textarea name="requirements" maxlength="10000"
+                        rows="4"></textarea></label><label>Benefits<textarea name="benefits" maxlength="10000"
+                        rows="4"></textarea></label></div><button id="submit-button">Check posting
+                <span>→</span></button><a class="sample" href="#" id="sample">Try a fake sample ↗</a>
+        </form>
+        <section class="card result" id="result" hidden></section>
+    </main>
+    <footer>Use this result as a screening aid. Verify the company and role through independent channels.</footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>History · JobCheck</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/app.js" defer></script>
+</head>
+
+<body>
+    <nav><a class="brand" href="/">JobCheck<span>·</span></a>
+        <div><a href="/bulk">Bulk check</a><a href="/history">History</a><a href="/metrics">Model metrics</a><a
+                href="/about">About</a></div>
+    </nav>
+    <main>
+        <section class="hero compact">
+            <div class="eyebrow">Recent checks</div>
+            <h1>Prediction history</h1>
+            <p>Only a SHA-256 hash and verdict are stored; posting text is not retained.</p>
+        </section>
+        <section class="card tablewrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Verdict</th>
+                        <th>Fake probability</th>
+                        <th>Input hash</th>
+                    </tr>
+                </thead>
+                <tbody id="history-body">
+                    <tr>
+                        <td colspan="4">Loading…</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>Verify employers independently before sharing sensitive information.</footer>
+</body>
+
+</html>

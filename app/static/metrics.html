@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metrics · JobCheck</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/app.js" defer></script>
+</head>
+
+<body>
+    <nav><a class="brand" href="/">JobCheck<span>·</span></a>
+        <div><a href="/bulk">Bulk check</a><a href="/history">History</a><a href="/metrics">Model metrics</a><a
+                href="/about">About</a></div>
+    </nav>
+    <main>
+        <section class="hero compact">
+            <div class="eyebrow">Model card</div>
+            <h1>How the model performs</h1>
+            <p>Evaluation uses a held-out test set from training.</p>
+        </section>
+        <section id="metrics-content">
+            <div class="card">Loading metrics…</div>
+        </section>
+    </main>
+    <footer>Metrics describe model evaluation, not a guarantee for an individual posting.</footer>
+</body>
+
+</html>
